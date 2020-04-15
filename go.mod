@@ -1,4 +1,4 @@
-module go.evanpurkhiser.com/prolink
+module github.com/voxxit/prolink-go
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect

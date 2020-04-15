@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"go.evanpurkhiser.com/prolink"
-	"go.evanpurkhiser.com/prolink/bpm"
+	"github.com/voxxit/prolink-go"
+	"github.com/voxxit/prolink-go/bpm"
 )
 
 // An Event is a string key for status change events

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"go.evanpurkhiser.com/prolink"
-	"go.evanpurkhiser.com/prolink/mixstatus"
+	"github.com/voxxit/prolink-go"
+	"github.com/voxxit/prolink-go/mixstatus"
 )
 
 func main() {

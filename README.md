@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/evanpurkhiser/prolink-go/workflows/build/badge.svg)](https://github.com/EvanPurkhiser/prolink-go/actions?query=workflow%3Abuild)
 [![Go Report Card](https://goreportcard.com/badge/github.com/evanpurkhiser/prolink-go)](https://goreportcard.com/report/github.com/evanpurkhiser/prolink-go)
-[![GoDoc](https://godoc.org/go.evanpurkhiser.com/prolink?status.svg)](https://godoc.org/go.evanpurkhiser.com/prolink)
+[![GoDoc](https://godoc.org/github.com/voxxit/prolink-go?status.svg)](https://godoc.org/github.com/voxxit/prolink-go)
 
 This go library provides an API to the Pioneer PRO DJ LINK network. Providing
 various interactions and event subscribing.
@@ -11,7 +11,7 @@ Massive thank you to [@brunchboy](https://github.com/brunchboy) for his work on
 [dysentery](https://github.com/brunchboy/dysentery).
 
 ```go
-import "go.evanpurkhiser.com/prolink"
+import "github.com/voxxit/prolink-go"
 ```
 
 ### Basic usage
@@ -46,17 +46,17 @@ st.AddStatusHandler(prolink.StatusHandlerFunc(statusChange));
 
 - Listen for Pioneer PRO DJ LINK devices to connect and disconnect from the
   network using the
-  [`DeviceManager`](https://godoc.org/go.evanpurkhiser.com/prolink#DeviceManager).
+  [`DeviceManager`](https://godoc.org/github.com/voxxit/prolink-go#DeviceManager).
   Currently active devices may also be queried.
 
 - Receive Player status details for each CDJ on the network. The status is
   reported as
-  [`CDJStatus`](https://godoc.org/go.evanpurkhiser.com/prolink#CDJStatus)
+  [`CDJStatus`](https://godoc.org/github.com/voxxit/prolink-go#CDJStatus)
   structs.
 
 - Query the Rekordbox remoteDB server present on both CDJs themselves and on
   the Rekordbox (PC / OSX / Android / iOS) software for track metadata using
-  [`RemoteDB`](https://godoc.org/go.evanpurkhiser.com/prolink#RemoteDB). This
+  [`RemoteDB`](https://godoc.org/github.com/voxxit/prolink-go#RemoteDB). This
   includes most metadata fields as well as (low quality) album artwork.
 
 - View the status of a DJ setup as a whole using the
